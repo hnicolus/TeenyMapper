@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\src\MiniMapper\MiniMapper.csproj" />
+    <ProjectReference Include="..\src\TeenyMapper\TeenyMapper.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

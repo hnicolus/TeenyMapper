@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>TeenyMapper</RootNamespace>
+    <PackageVersion>0.1.0-alpha</PackageVersion>
+    <Title>TeenyMapper</Title>
+    <Authors>Nicolas Maluleke</Authors>
+    <Description>Teeny Mapper is a very tiny and fast  Object Mapper library</Description>
+  </PropertyGroup>
+</Project>

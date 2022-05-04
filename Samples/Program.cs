@@ -1,13 +1,11 @@
-﻿
+﻿using TeenyMapper;
 
-using MiniMapper;
-
-var b = (B) Mapper.Map<B>(new A { Id = 2, Name = "Nicolas" });
+var b =  Mapper.Map<B>(new A { Id = 2, Name = "Nicolas" });
 Console.WriteLine($"Id {b.Id} \nName : {b.Name}");
 
 public class A
 {
-    public int Id { get; set; }
+    public int Id { get; set; } = 1;
     public string Name { get; set; }
 }
 public class B

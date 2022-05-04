@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Reflection.Emit;
 
-namespace MiniMapper;
+namespace TeenyMapper;
 
 public static class Mapper
 {

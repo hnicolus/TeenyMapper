@@ -23,11 +23,11 @@ public static class Mapper
     static MethodInfo CreateMapMethod(Type fromType, Type toType)
     {
 
-        AssemblyName aName = new AssemblyName("InternalMapperAssembly");
-        var ab = AssemblyBuilder.DefineDynamicAssembly(aName, AssemblyBuilderAccess.Run);
-        var mb = ab.DefineDynamicModule(aName.Name);
+        var assemblyName = new AssemblyName("InternalMapperAssembly");
+        var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
+        var moduleBuilder = assemblyBuilder.DefineDynamicModule(assemblyName.Name);
 
-        var typeBuilder = mb.DefineType("Mapper", TypeAttributes.NotPublic);
+        var typeBuilder = moduleBuilder.DefineType("Mapper", TypeAttributes.NotPublic);
         var methodBuilder = typeBuilder.DefineMethod(
             "Map",
             MethodAttributes.Public | MethodAttributes.Static,

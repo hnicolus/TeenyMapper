@@ -43,7 +43,7 @@ public static class Mapper
         {
             var toProp = toType.GetProperty(property.Name);
 
-            //Skip Method if MappingTo Type does not have property
+            //Skip if MappingTo property does not have 
             if (toProp == null) continue;
 
             gen.Emit(OpCodes.Dup);
